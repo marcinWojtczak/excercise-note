@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  padding: 1rem;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo--img {
+  margin-left: 0.5rem;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+}
+
+.exerciseBox {
+  width: 90%;
+  height: 80vh;
+  background: #fff;
+  margin: auto;
+  padding: 2rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.input {
+  padding: 10px 20px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  color: var(--color-background)
+}
+
+.form__button {
+  padding: 10px 15px;
+  color: #fff;
+  outline: none;
+  background: var(--color-background);
+  box-shadow: 0 0 10px #000;
+  transition: 0.2s all;
+}
+
+.form__button:hover {
+  background: #000
+}
+
+.form__button:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px #000;
+}
+
