@@ -39,7 +39,15 @@
   border: none;
   border-bottom: 1px solid black;
   outline: none;
-  color: var(--color-background)
+  color: var(--color-background);
+}
+
+.form__input--text {
+  width: 40%;
+}
+
+.form__input--number {
+  width: 12%;
 }
 
 .form__button {
@@ -49,6 +57,7 @@
   background: var(--color-background);
   box-shadow: 0 0 10px #000;
   transition: 0.2s all;
+  border: none;
 }
 
 .form__button:hover {
@@ -60,3 +69,10 @@
   box-shadow: 0 0 5px #000;
 }
 
+.form__input--text {
+  color: #000
+}
+
+.li {
+  color: black
+}
