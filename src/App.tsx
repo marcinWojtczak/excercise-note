@@ -8,7 +8,7 @@ import ExerciseList from './components/ExerciseList';
 
 const App = () => {
 
-  //exercise data
+  //input exercise data
   const [formData, setFormData] = useState<{exercise: string; sets: number|string; repetition: number|string}>(
     {exercise: '', sets: '', repetition: ''}
   );
@@ -19,7 +19,7 @@ const App = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if(formData) {
-      setExerciseList([...exerciseList, {id: Date.now(), exercise: formData.exercise, sets: formData.exercise, repetition: formData.repetition}]);
+      setExerciseList([...exerciseList, {id: Date.now(), exercise: formData.exercise, sets: formData.sets, repetition: formData.repetition}]);
       setFormData( {exercise:'', sets: '', repetition: ''})
     }
   }
@@ -28,16 +28,16 @@ const App = () => {
   return (
     <div className="App">
       <Header />
+      <InputFields 
+        formData={formData}
+        setFormData={setFormData}
+        handleSubmit={handleSubmit}
+      />
       <main className="exerciseBox" >
-        <InputFields 
-          formData={formData}
-          setFormData={setFormData}
-          handleSubmit={handleSubmit}
+        <ExerciseList 
+          exerciseList={exerciseList}
+          setExerciseList={setExerciseList}
         />
-        <ExerciseList/>
-        {exerciseList.map((exercise) => (
-          <li className="li">{exercise.exercise}</li>
-        ))}
       </main>
       
     </div>

@@ -12,13 +12,11 @@ interface Props {
 
 const InputFields = ({formData, setFormData, handleSubmit }: Props) => {
 
-  
-
   return (
     <form className="form" onSubmit={(e) => handleSubmit(e)}>
       <input 
         className="form__input--text input" 
-        type="input" 
+        type="text" 
         placeholder="Add exercise"
         name='exercise'
         value={formData.exercise}
