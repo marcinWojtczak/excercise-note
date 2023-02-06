@@ -6,6 +6,7 @@ interface Props {
     exercise: string;
     sets: number|string;
     repetition: number|string;
+  
   }>>
   handleSubmit: (e: React.FormEvent) => void;
 };

@@ -2,8 +2,8 @@
 
 :root {
   --font-family: 'Manrope', sans-serif;
-  --color-background: #222222;
-  --color-header: #150050;
-  --color-text: #3F0071;
-  --color-subtext: #FB2576;
+  --color-background: #000;
+  --color-header: #101010;
+  --color-text: #D72323;
+  --color-subtext: #F5EDED;
 }

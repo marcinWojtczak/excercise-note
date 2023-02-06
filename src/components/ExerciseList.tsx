@@ -7,6 +7,7 @@ interface Props {
   setExerciseList: React.Dispatch<React.SetStateAction<ExerciseData[]>>;
 }
 
+
 const ExerciseList = ({ exerciseList, setExerciseList}: Props) => {
   
   return (
